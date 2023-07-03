@@ -6,13 +6,185 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Johan Kok
-title: Website (still building)
+name: Johan Kok Zhi Kang
+title: Data Scientist & Incoming PhD graduate
 email: johan.kok@u.nus.edu
-website: https://JKOK005.github.io
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
+
+# Social links
+twitter_username: jkok005
+github_username:  JKOK005
+linkedin_username: johan-zhi-kang-kok-582417104
+
+# Additional icon links
+additional_links:
+- title: medium
+  icon: fas fa-book-reader
+  url: https://medium.com/@johankok
+
+about_profile_image: images/my_photo.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  Hello world, my name is Johan Kok. I am a Data Scientist with Grab and a full time PhD student with the National University of Singapore.
+  
+  I have a wealth of experience architecting big data stacks. I have developed fast pipelines and state-of-the-art machine learning models.
+  I have also published papers in top CS conferences and have filed 1 patent.
+
+  My personal interest is to explore how we can translate cutting edge research work into real world impact. Research often moves orthogonal to what the industry needs and I hope to contribute in bridging this gap. 
+
+  I am proficient in: <mark>Python</mark>, <mark>Scala</mark>, <mark>Java</mark>, <mark>GoLang</mark>
+
+  I have worked with: <mark>Spark</mark>, <mark>Spark Streaming</mark>, <mark>Airflow</mark>, <mark>SQL & NoSQL</mark>. <mark>Tensorflow & Torch</mark>, <mark>Docker</mark>
+
+  I am curious about: <mark>Fintech</mark>, <mark>Blockchain</mark>, <mark>Realtime systems design</mark>, <mark>Deep learning</mark>, <mark>Parallel programming</mark>
+
+  I have published papers in: <mark>ACM SIGMOD</mark>, <mark>ACM SIGKDD</mark>, <mark>VLDB</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-left
+        title: Crypto Arbitrage Bot
+        sub_title: (Insert Github here)
+        quote: >
+          SPOT-PERP crypto asset trading bot. We did make a fair bit when FTX crashed lol. 
+        description: | # this will include new lines to allow paragraphs
+          I collaborated with an ex-JPMorgan senior trader to design a spot-perp arbitrage bot on multiple exchanges.
+          
+          The bot looks at slippages in prices and executes a trade when the slippage is too large. In theory, this sounds easy but the implementation was a steep challenge.
+
+          I designed and optimized the trading logic so that most trades are profitable. I also built supporting infrastructure to automate the bot's deployment for multiple spot-perp pairs.
+
+      - layout: top-left
+        title: AdaptiveStream
+        sub_title: In Progress
+        quote: >
+          Python library for building capacity scaled mixture of experts (MoE) models.
+        description: | # this will include new lines to allow paragraphs
+          AdaptiveStream is a library that enables users to customize <i> Rules </i> defining when experts should be created and <i> Policies </i> specifying how these experts are created.
+          
+          We enable fast scaling and inference over MoE models and are better than traditional continual learning frameworks focused on single model incremental learning. 
+
+      - layout: top-left
+        title: The Indexed Router
+        sub_title: Published in SIGKDD 2023
+        quote: >
+          Indexing machine learning models into a hierarchy for super fast knowledge access
+        description: | # this will include new lines to allow paragraphs
+          Continuous learning models must balance between learning under concept drift and catastrophic forgetting. 
+
+          We explore how we can index these trained models for fast knowledge retrieval and reboustness to catastrophic forgetting.
+          We then developed a novel indexing scheme for each trained model and routing protocol for expert selection in logarithmic time complexity. 
+          More details can be found in our paper:
+
+          <strong style="color:blue;"> Johan Kok Zhi Kang, Sien Yi Tan, Bingsheng He and Zhen Zhang. Real Time Index and Search Across Large Quantities of GNN Experts for Low Latency Online Learning. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023) </strong>
+
+      - layout: top-left
+        title: Deep Dynamic Graph Partitioning
+        sub_title: Published in SIGKDD 2022
+        quote: >
+          Graph partitioning algorithm refined using closed-loop feedback from model training performances  
+        description: | # this will include new lines to allow paragraphs
+          Most graph partitioning algorithms are deterministic. They partition a large graph based on topology. 
+
+          We argue that it is more sensible to partition the graph with the objective of maximizing the training performances of machine learning models. 
+          We developed a novel algorithm that iteratively refines partition boundaries such that the final sub-graphs are optimized for model learning.
+          More details can be found in our paper:
+
+          <strong style="color:blue;"> Johan Kok Zhi Kang, Suwei Yang, Suriya Venkatesan, Sien Yi Tan, Feng Cheng, and Bingsheng He. Dynamic Graph Segmentation for Deep Graph Neural Networks. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022) </strong>
+
+      - layout: top-left
+        title: Prestroid
+        sub_title: Published in SIGMOD 2021
+        quote: >
+          Deep learning, SQL language parsing for resource estimation
+        description: | # this will include new lines to allow paragraphs
+          Prestroid helps developers figure out how much resources their SQL query needs. No need to worry about under provisioning resources, which causes queries to fail, or over provisioning, which leads to wastage in costs.
+
+          We analysed thousands of SQL queries and their resource consumption profile at Grab. We then improved on tree-convolutional models to develop state-of-the-art resource consumption forecast for a new SQL query.
+          More details can be found in our paper:
+
+          <strong style="color:blue;"> Johan Kok Zhi Kang, Gaurav, Sien Yi Tan, Feng Cheng, Shixuan Sun, Bingsheng He. Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload. Proceedings of the 2021 International Conference on Management of Data (SIGMOD 2021) </strong>
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: <strong style="color:green;font-size:3.5rem"> Grab </strong>
+        link: https://www.grab.com/sg/
+        link_text: Grab website
+        sub_title: Data Scientist
+        caption: Aug 2019 - Present
+        quote: >
+          Geo data science team / Grab-NUS Ai Lab
+        description: | # this will include new lines to allow paragraphs
+          I build novel machine learning algorithms for a wide range of applications at Grab. 
+          My work is grounded on solving problems with near term impact, such as building better forecasting models for traffic or POI prediction.
+
+          I have worked with: <mark>Tree convolution</mark>, <mark>Graphsage</mark>, <mark>Graph attention</mark>, <mark>Spatio temporal models</mark>
+
+      - layout: left
+        title: <strong style="color:green;font-size:3.5rem"> Grab </strong>
+        link: https://www.grab.com/sg/
+        link_text: Grab website
+        sub_title: Data Engineer
+        caption: Jan 2018 - July 2019
+        quote: >
+          I didn't know what big data was until I saw the datalake  
+        description: | # this will include new lines to allow paragraphs
+          I am proficient with the big data ecosystem and have built data pipelines for ingestion of Petabyte-scale data lakes.
+          I am also familiar with architecting fast data pipelines and I have worked with the full software development cycle involving POC development, unit testing, releasing to production and troubleshooting bugs in the code. 
+
+          <strong> Key achievements </strong> include spearheading the development of real time data pipelines on Spark Streaming, even working with engineers senior to my grade, to optimise for costs and better service quality for Grab’s internal users.
+
+      - layout: left
+        title: Tutor & Adjunct Lecturer 
+        sub_title: Freelance tutoring / Adjunct @ NUS ISS Stack-up
+        link: https://www.iss.nus.edu.sg/executive-education/discipline/detail/stackup---startup-tech-talent-development
+        link_text: NUS ISS website
+        caption: Jan 2018 - Present
+        quote: >
+          Data structures & algorithms / Object oriented programming / Data science / Python
+        description: | # this will include new lines to allow paragraphs
+          I have tutored 9 bachelors / masters level students and conducted programming lectures for classes of above 40 pax. 
+
+          I also help out with tech events organized by [geekshacking](https://www.geekshacking.com/).
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: National University of singapore
+        caption: 2019 - 2023
+        sub_title: PhD, Computer Science
+        
+        description: | # this will include new lines to allow paragraphs
+          My work is in building mixture of expert models that are robust to concept drift and catastrophic forgetting. 
+          
+          My thesis is titled: <strong style="color:blue;"> "Capacity Scaling Algorithms for Mixture of Expert Models Subjected to Learning Under Spatial and Temporal Concept Drift" </strong>
+
+          Doing a PhD is one of the hardest things I've done in my life. This is not for the faint hearted.
+
+      - layout: left
+        title: Nanyang Technological University
+        caption: 2013 - 2017
+        sub_title: Masters, Technology Management & Bachelors, Mechanical Engineering
+        
+        description: | # this will include new lines to allow paragraphs
+          Graduated <strong> first class with honors </strong> for my bachelors degree. 
+
+          Did a 3rd year exchange in the University of California, Berkeley, where I realized my interest was in computer science. 
+          Juggled between self studying CS courses and my university coursework ever since I came back to Singapore.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      My other hobbies include
+      - Exploring countries
+      - Trying out weird food
+      - Using stats to out-game claw machine setups
 
 # Footer
 footer_show_references: true
