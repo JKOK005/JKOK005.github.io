@@ -50,9 +50,6 @@
         
       </ul><p>
           Email: <a href="mailto:johan.kok@u.nus.edu" target="_blank">johan.kok@u.nus.edu</a>
-        </p><p>
-          Web: 
-<a href="https://www.JKOK005.github.io" target="_blank" class="">https://www.JKOK005.github.io</a>
         </p></div>
   </div>
 </div>
@@ -67,9 +64,11 @@
 <p>I have a wealth of experience architecting big data stacks. I have developed fast pipelines and state-of-the-art machine learning models.
 I have also published papers in top CS conferences and have filed 1 patent.</p>
 
-<p>My personal interest is to explore how we can translate cutting edge research work into real world impact. Research is often orthogonal to what the industry needs and I hope to contribute in bridging this gap.</p>
+<p>My personal interest is to explore how we can translate cutting edge research work into real world impact. Research often moves orthogonal to what the industry needs and I hope to contribute in bridging this gap.</p>
 
 <p>I am proficient in: <mark>Python</mark>, <mark>Scala</mark>, <mark>Java</mark>, <mark>GoLang</mark></p>
+
+<p>I have worked with: <mark>Spark</mark>, <mark>Spark Streaming</mark>, <mark>Airflow</mark>, <mark>SQL &amp; NoSQL</mark>. <mark>Tensorflow &amp; Torch</mark>, <mark>Docker</mark></p>
 
 <p>I am curious about: <mark>Fintech</mark>, <mark>Blockchain</mark>, <mark>Realtime systems design</mark>, <mark>Deep learning</mark>, <mark>Parallel programming</mark></p>
 
@@ -84,11 +83,11 @@ I have also published papers in top CS conferences and have filed 1 patent.</p>
             
   <div class="row clearfix layout layout-top-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="crypto-arbitrage-bot">Crypto Arbitrage Bot</h4><p class="no-print aditional-links">
+      <h4 id="crypto-arbitrage-bot">Crypto Arbitrage Bot</h4><p><b>(Insert Github here)</b></p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Low latency trading bot. We did make a fair bit when LUNA crashed lol. 
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">SPOT-PERP crypto asset trading bot. We did make a fair bit when FTX crashed lol. 
 </p><p>I collaborated with an ex-JPMorgan senior trader to design a spot-perp arbitrage bot on multiple exchanges.</p>
 
 <p>The bot looks at slippages in prices and executes a trade when the slippage is too large. In theory, this sounds easy but the implementation was a steep challenge.</p>
@@ -100,48 +99,67 @@ I have also published papers in top CS conferences and have filed 1 patent.</p>
 
   <div class="row clearfix layout layout-top-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="adaptivestream">AdaptiveStream</h4><p class="no-print aditional-links">
+      <h4 id="adaptivestream">AdaptiveStream</h4><p><b>In Progress</b></p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">-
-</p><p>-</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Python library for building capacity scaled mixture of experts (MoE) models.
+</p><p>AdaptiveStream is a library that enables users to customize <i> Rules </i> defining when experts should be created and <i> Policies </i> specifying how these experts are created.</p>
+
+<p>We enable fast scaling and inference over MoE models and are better than traditional continual learning frameworks focused on single model incremental learning.</p>
 
     </div>
   </div>
 
   <div class="row clearfix layout layout-top-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="the-indexed-router">The Indexed Router</h4><p class="no-print aditional-links">
+      <h4 id="the-indexed-router">The Indexed Router</h4><p><b>Published in SIGKDD 2023</b></p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">-
-</p><p>-</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Indexing machine learning models into a hierarchy for super fast knowledge access
+</p><p>Continuous learning models must balance between learning under concept drift and catastrophic forgetting.</p>
+
+<p>We explore how we can index these trained models for fast knowledge retrieval and reboustness to catastrophic forgetting.
+We then developed a novel indexing scheme for each trained model and routing protocol for expert selection in logarithmic time complexity. 
+More details can be found in our paper:</p>
+
+<p><strong style="color:blue;"> Johan Kok Zhi Kang, Sien Yi Tan, Bingsheng He and Zhen Zhang. Real Time Index and Search Across Large Quantities of GNN Experts for Low Latency Online Learning. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023) </strong></p>
 
     </div>
   </div>
 
   <div class="row clearfix layout layout-top-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="deep-dynamic-graph-partitioning">Deep Dynamic Graph Partitioning</h4><p class="no-print aditional-links">
+      <h4 id="deep-dynamic-graph-partitioning">Deep Dynamic Graph Partitioning</h4><p><b>Published in SIGKDD 2022</b></p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">-
-</p><p>-</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Graph partitioning algorithm refined using closed-loop feedback from model training performances  
+</p><p>Most graph partitioning algorithms are deterministic. They partition a large graph based on topology.</p>
+
+<p>We argue that it is more sensible to partition the graph with the objective of maximizing the training performances of machine learning models. 
+We developed a novel algorithm that iteratively refines partition boundaries such that the final sub-graphs are optimized for model learning.
+More details can be found in our paper:</p>
+
+<p><strong style="color:blue;"> Johan Kok Zhi Kang, Suwei Yang, Suriya Venkatesan, Sien Yi Tan, Feng Cheng, and Bingsheng He. Dynamic Graph Segmentation for Deep Graph Neural Networks. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022) </strong></p>
 
     </div>
   </div>
 
   <div class="row clearfix layout layout-top-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="prestroid">Prestroid</h4><p class="no-print aditional-links">
+      <h4 id="prestroid">Prestroid</h4><p><b>Published in SIGMOD 2021</b></p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">-
-</p><p>-</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Deep learning, SQL language parsing for resource estimation
+</p><p>Prestroid helps developers figure out how much resources their SQL query needs. No need to worry about under provisioning resources, which causes queries to fail, or over provisioning, which leads to wastage in costs.</p>
+
+<p>We analysed thousands of SQL queries and their resource consumption profile at Grab. We then improved on tree-convolutional models to develop state-of-the-art resource consumption forecast for a new SQL query.
+More details can be found in our paper:</p>
+
+<p><strong style="color:blue;"> Johan Kok Zhi Kang, Gaurav, Sien Yi Tan, Feng Cheng, Shixuan Sun, Bingsheng He. Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload. Proceedings of the 2021 International Conference on Management of Data (SIGMOD 2021) </strong></p>
 
     </div>
   </div>
@@ -154,8 +172,21 @@ I have also published papers in top CS conferences and have filed 1 patent.</p>
             
   <div class="row clearfix layout layout-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="grab">Grab</h4><p><b>Data Scientist</b></p><p>Aug 2019 - Present</p>
-<a href="//??" target="_blank" class="link">??</a><p class="no-print aditional-links">
+      <h4 id="strong-style-color-green-font-size-3-5rem-grab-strong"><strong style="color:green;font-size:3.5rem"> Grab </strong></h4><p><b>Data Scientist</b></p><p>Aug 2019 - Present</p>
+<a href="https://www.grab.com/sg/" target="_blank" class="link">Grab website</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Geo data science team / Grab-NUS Ai Lab
+</p><p>-</p>
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="strong-style-color-green-font-size-3-5rem-grab-strong"><strong style="color:green;font-size:3.5rem"> Grab </strong></h4><p><b>Data Engineer</b></p><p>Jan 2018 - July 2019</p>
+<a href="https://www.grab.com/sg/" target="_blank" class="link">Grab website</a><p class="no-print aditional-links">
         
       </p>
     </div>
@@ -167,13 +198,15 @@ I have also published papers in top CS conferences and have filed 1 patent.</p>
 
   <div class="row clearfix layout layout-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="grab">Grab</h4><p><b>Data Engineer</b></p><p>Jan 2018 - July 2019</p>
-<a href="//??" target="_blank" class="link">??</a><p class="no-print aditional-links">
+      <h4 id="tutor-adjunct-lecturer">Tutor & Adjunct Lecturer</h4><p><b>Freelance tutoring / Adjunct @ NUS ISS Stack-up</b></p><p>Jan 2018 - Present</p>
+<a href="https://www.iss.nus.edu.sg/executive-education/discipline/detail/stackup---startup-tech-talent-development" target="_blank" class="link">NUS ISS website</a><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">-
-</p><p>-</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Data structures & algorithms / Object oriented programming / Data science / Python
+</p><p>I have tutored 9 bachelors / masters level students and conducted programming lectures for classes of above 40 pax.</p>
+
+<p>I also help out with tech events organized by <a href="https://www.geekshacking.com/">geekshacking</a>.</p>
 
     </div>
   </div>
@@ -186,34 +219,25 @@ I have also published papers in top CS conferences and have filed 1 patent.</p>
             
   <div class="row clearfix layout layout-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="harvard-university">Harvard University</h4><p><b>BSc Computer Science</b></p><p>2010 - 2013</p><p class="no-print aditional-links">
+      <h4 id="national-university-of-singapore">National University of singapore</h4><p><b>PhD, Computer Science</b></p><p>2019 - 2023</p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-</p><p>During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.</p>
-
-<p>I spent a lot of my free time as a committee member of the <em>Harvard Mountaineering Club</em> taking on roles such as <em>Trip Secretary</em> and <em>Vice-President</em>.</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>One of the hardest things I’ve done in my life. This is not for the faint hearted.</p>
 
     </div>
   </div>
 
-
-          </div>
-        
-          <div class="container list-container">
-            <h3 id="education">Education</h3>
-            
   <div class="row clearfix layout layout-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="harvard-university">Harvard University</h4><p><b>BSc Computer Science</b></p><p>2010 - 2013</p><p class="no-print aditional-links">
+      <h4 id="nanyang-technological-university">Nanyang Technological University</h4><p><b>Masters, Technology Management & Bachelors, Mechanical Engineering</b></p><p>2013 - 2017</p><p class="no-print aditional-links">
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p class="quote">Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-</p><p>During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>Graduated <strong> first class with honors </strong> for my bachelors degree.</p>
 
-<p>I spent a lot of my free time as a</p>
+<p>Did a 3rd year exchange in the University of California, Berkeley, where I realized my interest was in computer science. 
+Juggled between self studying CS courses and my university coursework ever since I came back to Singapore.</p>
 
     </div>
   </div>
