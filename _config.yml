@@ -21,10 +21,10 @@ linkedin_username: johan-zhi-kang-kok-582417104
 # Additional icon links
 additional_links:
 - title: medium
-  icon: fas fa-camera
+  icon: fas fa-book-reader
   url: https://medium.com/@johankok
 
-about_profile_image: images/profile.jpg
+about_profile_image: images/my_photo.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Hello world, my name is Johan Kok. I am a Data Scientist with Grab and a full time PhD student with the National University of Singapore.
   
@@ -120,7 +120,10 @@ content:
         quote: >
           Geo data science team / Grab-NUS Ai Lab
         description: | # this will include new lines to allow paragraphs
-          - 
+          I build novel machine learning algorithms for a wide range of applications at Grab. 
+          My work is grounded on solving problems with near term impact, such as building better forecasting models for traffic or POI prediction.
+
+          I have worked with: <mark>Tree convolution</mark>, <mark>Graphsage</mark>, <mark>Graph attention</mark>, <mark>Spatio temporal models</mark>
 
       - layout: left
         title: <strong style="color:green;font-size:3.5rem"> Grab </strong>
@@ -129,9 +132,12 @@ content:
         sub_title: Data Engineer
         caption: Jan 2018 - July 2019
         quote: >
-          -
+          I didn't know what big data was until I saw the datalake  
         description: | # this will include new lines to allow paragraphs
-          -
+          I am proficient with the big data ecosystem and have built data pipelines for ingestion of Petabyte-scale data lakes.
+          I am also familiar with architecting fast data pipelines and I have worked with the full software development cycle involving POC development, unit testing, releasing to production and troubleshooting bugs in the code. 
+
+          <strong> Key achievements </strong> include spearheading the development of real time data pipelines on Spark Streaming, even working with engineers senior to my grade, to optimise for costs and better service quality for Grab’s internal users.
 
       - layout: left
         title: Tutor & Adjunct Lecturer 
@@ -155,7 +161,11 @@ content:
         sub_title: PhD, Computer Science
         
         description: | # this will include new lines to allow paragraphs
-          One of the hardest things I've done in my life. This is not for the faint hearted.
+          My work is in building mixture of expert models that are robust to concept drift and catastrophic forgetting. 
+          
+          My thesis is titled: <strong style="color:blue;"> "Capacity Scaling Algorithms for Mixture of Expert Models Subjected to Learning Under Spatial and Temporal Concept Drift" </strong>
+
+          Doing a PhD is one of the hardest things I've done in my life. This is not for the faint hearted.
 
       - layout: left
         title: Nanyang Technological University
@@ -171,14 +181,10 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      My other hobbies include
+      - Exploring countries
+      - Trying out weird food
+      - Using stats to out-game claw machine setups
 
 # Footer
 footer_show_references: true
